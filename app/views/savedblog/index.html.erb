@@ -503,7 +503,28 @@ src="Reader-My-Saved-Blogposts_files/u124.png" border="0" alt=""></span>
 <DIV id=u124container style="position:absolute; left:225px; top:180px; width:551px; height:531px; border:2px solid #BDBDBD; background:#E6E6E6; overflow:visible;">
 
 <DIV id=u125 style="position:absolute; left:2px; top:257px; width:546px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-
+<% @blog.each do |f| %>
+<table>
+	<tr>
+	<td>
+		<%= f.title %>
+		
+	</td>
+	</tr>
+	<tr>
+	<td>
+	</td>
+	<td>
+		<%= f.short_description %>
+	</td>
+	</tr>
+	<tr>
+<td></td>
+<td><%=f.author %></td>
+<td><%= f.created_at %></td>
+	</tr>
+<% end %>
+</table>
 </DIV>
 </DIV>
 <IMG id=u124 src="Resources/transparent.gif" style="position:absolute; left:225px; top:180px; width:550px; height:530px"  >
@@ -605,64 +626,12 @@ src="Reader-My-Saved-Blogposts_files/u129.png" border="0" alt=""></span>
 <DIV id=u142_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Previous</u></span></DIV></DIV>
 <DIV id=u143 style="position:absolute; left:726px; top:674px; width:41px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u143_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Next</u></span></DIV></DIV>
-<% @blog.each do |t| %>
-<DIV id=u148 style="position:absolute; left:242px; top:239px; width:195px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u148_rtf><span style=" font-family:'Arial'; color:#949494; font-size:15px;"><u><b><%= t.title %></b></u></span></DIV></DIV>
-<DIV id=u148ann style="font-size:1px; position:absolute; left:428px; top:235px; width:1px; height:1px; overflow:visible"></DIV>
 
-<DIV id=ou149 style="position:absolute; left:237px; top:270px; width:114px; height:91px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:122px; height:99px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Reader-My-Saved-Blogposts_files/u149.png',sizingMethod='scale');
-"><img style="width:122px; height:99px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Reader-My-Saved-Blogposts_files/u149.png" border="0" alt=""></span>
 
-</DIV>
-<DIV id=u149container style="position:absolute; left:237px; top:270px; width:114px; height:91px;; overflow:visible;">
 
-<DIV id=u150 style="position:absolute; left:2px; top:37px; width:109px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u150_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u149 src="Resources/transparent.gif" style="position:absolute; left:237px; top:270px; width:113px; height:90px"  >
 
-<DIV id=u151 style="position:absolute; left:363px; top:271px; width:154px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u151_rtf><span style=" font-family:'Arial'; color:#000000; font-size:12px;"><%= t.created_at %></span></DIV></DIV>
-<DIV id=u152 style="position:absolute; left:523px; top:270px; width:114px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u152_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%= t.author %></b></span></DIV></DIV>
-<DIV id=u153 style="position:absolute; left:358px; top:298px; width:386px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u153_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><%= t.short_description %></span></DIV></DIV>
-<DIV id=u154 style="position:absolute; left:677px; top:315px; width:93px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u154_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u><%= link_to 'readmore' %></u></span></DIV></DIV>
-<DIV id=u154ann style="font-size:1px; position:absolute; left:761px; top:311px; width:1px; height:1px; overflow:visible"></DIV>
-<% end %>
-<DIV id=u155 style="position:absolute; left:245px; top:379px; width:195px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u155_rtf><span style=" font-family:'Arial'; color:#949494; font-size:15px;"><u><b>Title of the Blogpost 2</b></u></span></DIV></DIV>
-<DIV id=u155ann style="font-size:1px; position:absolute; left:431px; top:375px; width:1px; height:1px; overflow:visible"></DIV>
 
-<DIV id=ou156 style="position:absolute; left:240px; top:410px; width:114px; height:91px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:122px; height:99px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Reader-My-Saved-Blogposts_files/u149.png',sizingMethod='scale');
-"><img style="width:122px; height:99px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Reader-My-Saved-Blogposts_files/u149.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u156container style="position:absolute; left:240px; top:410px; width:114px; height:91px;; overflow:visible;">
-
-<DIV id=u157 style="position:absolute; left:2px; top:37px; width:109px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u157_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u156 src="Resources/transparent.gif" style="position:absolute; left:240px; top:410px; width:113px; height:90px"  >
-
-<DIV id=u158 style="position:absolute; left:366px; top:411px; width:154px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u158_rtf><span style=" font-family:'Arial'; color:#000000; font-size:12px;">Wednesday May 6, 2009</span></DIV></DIV>
-<DIV id=u159 style="position:absolute; left:526px; top:410px; width:114px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u159_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>[ Author Name ]</b></span></DIV></DIV>
-<DIV id=u160 style="position:absolute; left:361px; top:438px; width:386px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u160_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">&lt;short description&gt; Lorem ipsum dolo imit set consecture Lorem ipsum dolo imit set consecture Lorem ipsum</span></DIV></DIV>
-<DIV id=u161 style="position:absolute; left:680px; top:455px; width:93px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u161_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Read more...</u></span></DIV></DIV>
-<DIV id=u161ann style="font-size:1px; position:absolute; left:764px; top:451px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u162 style="position:absolute; left:49px; top:217px; width:141px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u162_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>My Saved Listings</u></span></DIV></DIV>
