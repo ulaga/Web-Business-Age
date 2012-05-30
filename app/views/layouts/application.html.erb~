@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WBA</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :all %>
+<%= include_tiny_mce_if_needed %> 
+<%= csrf_meta_tag %>
+</head>
+<body>
+<% if user_signed_in? %>
+<%= render :partial => "layouts/aftersignin" %>
+<% else %>
+<%= render :partial => "layouts/beforesignin" %>
+<% end %>
+<p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+
+<DIV id=ou27 style="position:absolute; left:30px; top:144px; width:941px; height:497px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:949px; height:505px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='About-page_files/u27.png',sizingMethod='scale');
+"><img style="width:949px; height:505px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="About-page_files/u27.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u27container style="position:absolute; left:30px; top:144px; width:941px; height:497px;; overflow:visible;">
+
+<DIV id=u28 style="position:absolute; left:2px; top:240px; width:936px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u28_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u27 src="Resources/transparent.gif" style="position:absolute; left:30px; top:144px; width:940px; height:496px"  >
+
+<DIV id=u29 style="position:absolute; left:82px; top:150px; width:418px; height:22px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u29_rtf><span style=" font-family:'Arial'; color:#333333; font-size:19px;">About WebBusinessAge</span></DIV></DIV>
+<span style="position:absolute; left:40px; top:178px; width:913px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='About-page_files/u30.png',sizingMethod='scale');
+"><img style="width:913px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="About-page_files/u30.png" border="0" alt=""></span>
+
+<IMG id=u30 src="Resources/transparent.gif" style="position:absolute; left:40px; top:177.5px; width:910px; height:2px">
+
+<span style="position:absolute; left:41px; top:146px; width:30px; height:30px">
+<span id=ou31 style="position:absolute;left:0px;top:0px;width:30px;height:30px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='About-page_files/u31.png',sizingMethod='scale');
+"><img style="width:30px; height:30px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="About-page_files/u31.png" border="0" alt=""></span>
+</span>
+<IMG id=u31 src="Resources/transparent.gif" style="position:absolute; left:41px; top:146px; width:30px; height:30px"   >
+
+<span style="position:absolute; left:43px; top:219px; width:677px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='About-page_files/u32.png',sizingMethod='scale');
+"><img style="width:677px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="About-page_files/u32.png" border="0" alt=""></span>
+
+<IMG id=u32 src="Resources/transparent.gif" style="position:absolute; left:43px; top:218.5px; width:674px; height:2px">
+
+<DIV id=u33 style="position:absolute; left:44px; top:234px; width:676px; height:48px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u33_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...</span></DIV></DIV>
+<span style="position:absolute; left:42px; top:326px; width:673px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='About-page_files/u34.png',sizingMethod='scale');
+"><img style="width:673px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="About-page_files/u34.png" border="0" alt=""></span>
+
+<IMG id=u34 src="Resources/transparent.gif" style="position:absolute; left:42px; top:325.5px; width:670px; height:2px">
+
+<DIV id=u35 style="position:absolute; left:44px; top:339px; width:673px; height:48px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u35_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...</span></DIV></DIV>
+<DIV id=u36 style="position:absolute; left:42px; top:303px; width:208px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u36_rtf><span style=" font-family:'Arial'; color:#000000; font-size:15px;"><b>Testimonials</b></span></DIV></DIV>
+<DIV id=u37 style="position:absolute; left:43px; top:195px; width:217px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u37_rtf><span style=" font-family:'Arial'; color:#000000; font-size:15px;"><b>About WebBusinessAge</b></span></DIV></DIV>
+<DIV id=u38 style="position:absolute; left:44px; top:402px; width:673px; height:48px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u38_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...</span></DIV></DIV>
+<DIV id=u39 style="position:absolute; left:47px; top:462px; width:673px; height:48px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u39_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...</span></DIV></DIV>
+<DIV id=u40 style="position:absolute; left:47px; top:522px; width:673px; height:48px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u40_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...Sample text describes our service will be listed here...</span></DIV></DIV>
+
+<SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="About-page_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

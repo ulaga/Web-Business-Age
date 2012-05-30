@@ -1,0 +1,9 @@
+class AddCategoryToBlog < ActiveRecord::Migration
+  def self.up
+	add_column :category, :blog, :string
+  end
+
+  def self.down
+	remove_column :category, :blog
+  end
+end

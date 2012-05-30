@@ -1,0 +1,33 @@
+
+<html>
+<body>
+
+
+
+<h1>Listing blogs</h1>
+<div style=" top:50px">
+<table >
+  <tr>
+    <th>Title</th>
+    <th>Short description</th>
+    <th>Author</th>
+  </tr>
+
+<% @blogs.each do |blog| %>
+  <tr>
+	<td><%= link_to blog.title, blog%></td>
+	<td><%= blog.short_description%></td>
+	<td><%= blog.author%></td>  
+    <td><%= link_to 'Show', blog %></td>
+    <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+    <td><%= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Blog', new_blog_path%>
+</div>
+</body>
+</html>

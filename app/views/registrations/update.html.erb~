@@ -1,0 +1,262 @@
+
+ <%= resource_name.to_s.humanize %></h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+
+
+
+
+
+<div id="u28container" style="position:absolute; left:28px; top:145px; width:941px; height:1036px;; overflow:visible;">
+<div id="u29" style="position:absolute; left:2px; top:509.5px; width:936px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u29_rtf">&nbsp;</div>
+</div>
+</div>
+<img id="u28" style="position:absolute; left:28px; top:145px; width:940px; height:1035px" src="Resources/transparent.gif">
+<div id="u30" style="position:absolute; left:80px; top:161px; width:200px; height:22px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u30_rtf">
+<span style=" font-family:'Arial'; color:#333333; font-size:19px;">Register -- Contd...</span>
+</div>
+</div>
+<span style="position:absolute; left:40px; top:194px; width:913px; height:5px; ; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Reg-Contd-Part-1_files/u31.png',sizingMethod='scale'); ">
+<img border="0" alt="" src="Reg-Contd-Part-1_files/u31.png" style="width:913px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);">
+</span>
+<img id="u31" style="position:absolute; left:40px; top:193.5px; width:910px; height:2px" src="Resources/transparent.gif">
+<span style="position:absolute; left:44px; top:155px; width:30px; height:30px">
+<span id="ou32" style="position:absolute;left:0px;top:0px;width:30px;height:30px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Reg-Contd-Part-1_files/u32.png',sizingMethod='scale'); ">
+<img border="0" alt="" src="Reg-Contd-Part-1_files/u32.png" style="width:30px; height:30px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);">
+</span>
+</span>
+<img id="u32" style="position:absolute; left:44px; top:155px; width:30px; height:30px" src="Resources/transparent.gif">
+<div id="u33" style="position:absolute; left:93px; top:247px; width:337px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u33_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Geographical_location_you_are_interested_in %>
+</span>
+</div>
+</div>
+<%= f.text_field :g_location %>
+<div style="position:absolute; left:440px; top:1112px; width:190px; height:40px; ; ; text-align: center ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value="Update profile details"><%= f.submit "Update" %></div>
+<div id="u34ann" style="font-size:1px; position:absolute; left:621px; top:1108px; width:1px; height:1px; overflow:visible"></div>
+<div id="u35" style="position:absolute; left:191px; top:290px; width:200px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u35_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<b>Your level in online business</b>
+</span>
+</div>
+</div>
+
+<div style="position:absolute; left:440px; top:288px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none">
+<%= f.text_field :level_in_business %>
+<%= f.select :level_in_business, options_for_select([["Any", "any"], ["Beginner", "beginner"], ["Intermediate", "intermediate"], ["Advanced", "advanced"]]) %>
+</div>
+<div id="u37" style="position:absolute; left:92px; top:338px; width:337px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u37_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Area_of_interest %>
+</span>
+</div>
+</div>
+<div id="u38container" style="position:absolute; left:158px; top:365px; width:122px; height:16px; ; ; text-align: left ">
+<div id="u39" style="position:absolute; left:16px; top:0px; width:104px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u39_rtf">
+<span style=" color:#000000; font-size:13px;"> Digital branding</span>
+</div>
+</div>
+</div>
+<div style="position:absolute; left:158px; top:365px; width:122px; height:16px; ; ; text-align: left ">
+<input id="u38" type="checkbox" value="checkbox" style="position:absolute; left:-3px; top:-2px;">
+</div>
+<div id="u40container" style="position:absolute; left:372px; top:366px; width:134px; height:16px; ; ; text-align: left ">
+<div id="u41" style="position:absolute; left:16px; top:0px; width:116px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u41_rtf">
+<span style=" color:#000000; font-size:13px;">B2B Marketing</span>
+</div>
+</div>
+</div>
+<div style="position:absolute; left:372px; top:366px; width:134px; height:16px; ; ; text-align: left ">
+<input id="u40" type="checkbox" value="checkbox" style="position:absolute; left:-3px; top:-2px;">
+</div>
+<div id="u42container" style="position:absolute; left:158px; top:394px; width:142px; height:16px; ; ; text-align: left ">
+<div id="u43" style="position:absolute; left:16px; top:0px; width:124px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u43_rtf">
+<span style=" color:#000000; font-size:13px;">Media Strategies</span>
+</div>
+</div>
+</div>
+<div style="position:absolute; left:158px; top:394px; width:142px; height:16px; ; ; text-align: left ">
+<input id="u42" type="checkbox" value="checkbox" style="position:absolute; left:-3px; top:-2px;">
+</div>
+<div id="u44container" style="position:absolute; left:372px; top:393px; width:114px; height:16px; ; ; text-align: left ">
+<div id="u45" style="position:absolute; left:16px; top:0px; width:96px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u45_rtf">
+<span style=" color:#000000; font-size:13px;">B2C Marketing</span>
+</div>
+</div>
+</div>
+<div style="position:absolute; left:372px; top:393px; width:114px; height:16px; ; ; text-align: left ">
+<input id="u44" type="checkbox" value="checkbox" style="position:absolute; left:-3px; top:-2px;">
+</div>
+<div id="u46container" style="position:absolute; left:158px; top:423px; width:192px; height:16px; ; ; text-align: left ">
+<div id="u47" style="position:absolute; left:16px; top:0px; width:174px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u47_rtf">
+<span style=" color:#000000; font-size:13px;"> Publishing and Monetization</span>
+</div>
+</div>
+</div>
+<div style="position:absolute; left:158px; top:423px; width:192px; height:16px; ; ; text-align: left ">
+<input id="u46" type="checkbox" value="checkbox" style="position:absolute; left:-3px; top:-2px;">
+</div>
+<div id="u48container" style="position:absolute; left:373px; top:423px; width:233px; height:16px; ; ; text-align: left ">
+<div id="u49" style="position:absolute; left:16px; top:0px; width:215px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u49_rtf">
+<span style=" color:#000000; font-size:13px;"> Integrated Marketing and systems</span>
+</div>
+</div>
+</div>
+<div style="position:absolute; left:373px; top:423px; width:233px; height:16px; ; ; text-align: left ">
+<input id="u48" type="checkbox" value="checkbox" style="position:absolute; left:-3px; top:-2px;">
+</div>
+<div id="u50" style="position:absolute; left:244px; top:479px; width:150px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u50_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Linkedin_url %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:440px; top:469px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :linkedin_url %></div>
+<div id="u52" style="position:absolute; left:304px; top:526px; width:150px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u52_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Twitter_url %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:440px; top:516px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :twitter_url %></div>
+<div id="u54" style="position:absolute; left:205px; top:570px; width:215px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u54_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Any_other_social_profile_url %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:440px; top:561px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :social_url %></div>
+<div id="u56" style="position:absolute; left:85px; top:616px; width:345px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u56_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Want_to_contribute_to_WebBusinessAge %>
+</span>
+</div>
+</div>
+<div id="u57container" style="position:absolute; left:440px; top:615px; width:60px; height:16px; ; ; text-align: left ">
+<div id="u58" style="position:absolute; left:16px; top:0px; width:42px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u58_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">Yes </span>
+</div>
+</div>
+</div>
+<div style="position:absolute; left:440px; top:615px; width:60px; height:16px; ; ; text-align: left ">
+<div style="position:absolute; left:-3px; top:-2px;" name="u57"><%= f.radio_button :Want_to_contribute_to_WebBusinessAge, 'yes', :checked => true %>
+</div>
+<div id="u59container" style="position:absolute; left:500px; top:615px; width:60px; height:16px; ; ; text-align: left ">
+<div id="u60" style="position:absolute; left:16px; top:0px; width:42px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u60_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;"> No</span>
+</div>
+</div>
+</div>
+<div style="position:absolute; left:500px; top:615px; width:60px; height:16px; ; ; text-align: left ">
+<div style="position:absolute; left:-3px; top:-2px;" name="u59"><%= f.radio_button :Want_to_contribute_to_WebBusinessAge, 'no'%>
+</div>
+<div id="u61" style="position:absolute; left:280px; top:660px; width:215px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u61_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Alternate_E_mail %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:435px; top:653px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :alternate_email %></div>
+<div id="u63" style="position:absolute; left:325px; top:705px; width:215px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u63_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Company %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:435px; top:701px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :company %></div>
+<div id="u65" style="position:absolute; left:335px; top:751px; width:215px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u65_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Address %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:435px; top:748px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :address %></div>
+<div id="u86" style="position:absolute; left:363px; top:803px; width:47px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u86_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :City %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:435px; top:800px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :city %></div>
+<div id="u89" style="position:absolute; left:363px; top:858px; width:47px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u89_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :State %>
+</span>
+</div>
+</div>
+
+<div style="position:absolute; left:435px; top:855px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :state %></div>
+<div id="u66" style="position:absolute; left:345px; top:913px; width:215px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u66_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Country %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:435px; top:909px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"><%= f.text_field :country %></div>
+
+<div id="u68" style="position:absolute; left:353px; top:963px; width:47px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u68_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Phone %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:435px; top:959px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :phone %></div>
+<div id="u93" style="position:absolute; left:353px; top:1010px; width:47px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u93_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :FAX %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:435px; top:1006px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :fax %></div>
+<div id="u70" style="position:absolute; left:280px; top:1061px; width:215px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u70_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Company_web_site %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:438px; top:1055px; width:385px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" value=""><%= f.text_field :company_site %></div>
+
+<div id="u97" style="position:absolute; left:650px; top:1125px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u97_rtf">
+<span style=" font-family:'Arial'; color:#0000FF; font-size:13px;">
+<u>Skip this step </u>
+</span>
+</div>
+</div>
+
+<% end %>
+
+<h3>Cancel my account</h3>
+
+<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
+
+<%= link_to "Back", :back %>

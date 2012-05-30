@@ -1,0 +1,16 @@
+class BlogController < ApplicationController
+
+def new
+  @list = Advsponsoredlisting.new
+
+end
+
+def create
+  @list = Advsponsoredlisting.new(params[:advsponsoredlisting])
+   
+	if @list.save  
+	redirect_to home_userhome_path
+	end
+  
+end
+end

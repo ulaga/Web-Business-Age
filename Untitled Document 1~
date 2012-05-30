@@ -1,0 +1,8 @@
+<%=form_for :user, :url=>{:action=>'create', :controller=>'registrations'} do |f|%>
+   <% @quality.each do |c| %>
+   <%= f.radio_button c.qualities, c.qualities %><%= c.qualities %>
+   <%if c.id%5==0%>
+   <br><br>
+   <% end %>
+   <% end %>
+<%=f.submit 'Next'%>  
