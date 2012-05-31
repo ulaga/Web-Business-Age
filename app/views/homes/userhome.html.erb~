@@ -169,7 +169,7 @@ src="After-login-page[My-WBA]_files/u50.png" border="0" alt=""></span>
 <IMG id=u50 src="Resources/transparent.gif" style="position:absolute; left:17px; top:140px; width:173px; height:190px"  >
 
 <DIV id=u52 style="position:absolute; left:55px; top:180px; width:141px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u52_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>My Saved Listings</u></span></DIV></DIV>
+<DIV id=u52_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u><%= link_to 'My Saved Listings', savedlisting_index_path %></u></span></DIV></DIV>
 <DIV id=u52ann style="font-size:1px; position:absolute; left:187px; top:176px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u53 style="position:absolute; left:50px; top:147px; width:150px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
@@ -348,7 +348,7 @@ src="After-login-page[My-WBA]_files/u44.png" border="0" alt=""></span>
 	<tr>
 		<td>
 		&nbsp
-		<%= link_to b.title, "/blogs/show/#{b.id}"%>
+		<%= link_to b.title, "/blogs/show/#{b.id}" %>
 		</td>
 	</tr>
 <% end %>

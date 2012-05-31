@@ -1,0 +1,5 @@
+<% if user_signed_in? %>
+<%= render :partial => "layouts/aftersignin" %>
+<% else %>
+<%= render :partial => "layouts/beforesignin" %>
+<% end %>

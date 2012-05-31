@@ -13,8 +13,11 @@ WBA::Application.routes.draw do
   match 'static/advertise' => 'static#advertise'
 #savedblogs
   match 'savedblog/new/:id' => 'savedblog#new',:as => :saved_blog
-  match 'savedlisting/new/:id' => 'savedlisting#new',:as => :saved_listing
+
   match 'savedblog/index' => 'savedblog#index'
+#savedlistings
+    match 'savedlisting/new/:id' => 'savedlisting#new',:as => :saved_listing
+    match 'savedlisting/index' => 'savedlisting#index'
  
 
 #all devise controllers

@@ -10,6 +10,8 @@ gem 'devise'
 gem 'galetahub-simple_captcha', :require => 'simple_captcha'
 gem 'tiny_mce'
 gem 'pg'
+gem 'heroku'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'

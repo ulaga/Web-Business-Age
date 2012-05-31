@@ -9,9 +9,10 @@ class SavedlistingController < ApplicationController
 		@s=Savedlisting.find(params[:id])
 	end
 	def index
-		@sa=Savedlisting.find_all_by_users_id(current_user.id)
+		@sa=Savedlisting.find_all_by_user_id(current_user.id)
 		@sa.each do |t|
-		@temp=Advsponsoredlisting.find_all_by_blogs_id(t.advsponsoredlistings_id)
+		#@temp=Advsponsoredlisting.find_all_by_id(t.advsponsoredlistings_id)
+		@temp = Advsponsoredlisting.find_all_by_id(t.advsponsoredlistings_id)
 		end
 
 	end

@@ -676,12 +676,13 @@ src="Blog-page_files/u183.png" border="0" alt=""></span>
 </DIV>
 <DIV id=u183container style="position:absolute; left:226px; top:570px; width:551px; height:618px; border:2px solid #BDBDBD; background:#E6E6E6; overflow:visible;">
 
-<DIV id=u184 style="position:absolute; left:2px; top:300.5px; width:546px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" ><table>
+<DIV id=u184 style="position:absolute; left:2px; top:300.5px; width:546px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 
 <% @blogs.last(3).each do |blog| %>
+<table>
   <tr>
 	<td> Title</td>
-	<td><%= link_to blog.title, blog%></td>
+	<td><%= link_to blog.title, "/blogs/show/#{blog.id}" %></td>
   </tr>
   <tr>
 	<td>
@@ -700,13 +701,17 @@ src="Blog-page_files/u183.png" border="0" alt=""></span>
     
     
   </tr>
-<% end %>
 </table>
+
+<% end %>
+
+
+
 <DIV id=u184_rtf>&nbsp;</DIV>
 
 </DIV>
 </DIV>
-<IMG id=u183 src="Resources/transparent.gif" style="position:absolute; left:226px; top:570px; width:550px; height:617px"  >
+
 
 <DIV id=u185 style="position:absolute; left:278px; top:584px; width:239px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u185_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;"><b>Recent Posts</b></span></DIV></DIV>

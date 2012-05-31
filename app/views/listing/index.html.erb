@@ -1,29 +1,84 @@
-<h1>Listings</h1>
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+<DIV id=ou8 style="position:absolute; left:20px; top:140px; width:1060px; height:31px;; overflow:visible">
 
+<span style="position:absolute; left:-3px; top:-3px; width:763px; height:39px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Directory-page_files/u8.png',sizingMethod='scale');
+"><img style="width:763px; height:39px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Directory-page_files/u8.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u8container style="position:absolute; left:20px; top:140px; width:1060px; height:31px; border:2px solid #BDBDBD; overflow:visible;">
+
+<DIV id=u9 style="position:absolute; left:2px; top:7px; width:750px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u9_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u8 src="Resources/transparent.gif" style="position:absolute; left:20px; top:140px; width:1059px; height:30px"  >
+
+<DIV id=u10 style="position:absolute; left:40px; top:144px; width:40px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u10_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Home</u></span></DIV></DIV>
+<DIV id=u11 style="position:absolute; left:83px; top:145px; width:20px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u11_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">&gt;</span></DIV></DIV>
+<DIV id=u12 style="position:absolute; left:99px; top:145px; width:61px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u12_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Directory</span></DIV></DIV>
+
+<span style="position:absolute; left:790px; top:988px; width:196px; height:6px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Directory-page_files/u21.png',sizingMethod='scale');
+"><img style="width:196px; height:6px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Directory-page_files/u21.png" border="0" alt=""></span>
+
+<IMG id=u21 src="Resources/transparent.gif" style="position:absolute; left:790px; top:988px; width:193px; height:3px">
+
+<DIV id=ou113 style="position:absolute; left:230px; top:181px; width:850px; height:620px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:549px; height:628px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Directory-page_files/u113.png',sizingMethod='scale');
+"><img style="width:549px; height:628px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Directory-page_files/u113.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u113container style="position:absolute; left:230px; top:181px; width:850px; height:620px; border:2px solid #BDBDBD; overflow:visible;">
+
+<DIV id=u114 style="position:absolute; left:2px; top:301.5px; width:536px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u114_rtf>&nbsp;</DIV>
 <table>
+<% @list.last(5).each do |l| %>
   <tr>
-    <th>Title</th>
-    <th>Short description</th>
-    <th>User level</th>
-    <th>Sponsored item1</th>
-    <th>Sponsored item2</th>
-    <th>Category</th>
-  </tr>
-
-<% @list.each do |l| %>
-  <tr>
-	<td><%= link_to l.title, "/listing/show/#{l.id}" %></td>
+	<td>Title</td>
+	<td><%= link_to l.title, "/listing/show_listing/#{l.id}" %></td>
+	<td>Short description</td>
 	<td><%= l.shortdescription%></td>
-	<td><%= l.userlevel%></td>  
-	<td><%= l.sponsored_item1%></td>  
-	<td><%= l.sponsored_item2%></td>  
-	<td><%= l.category%></td>  
-    
-    
+  </tr>
+<tr></tr>  
+  <tr>
+	<td>Created on</td>
+	<td><%= l.created_at%></td>  
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New List', listing_new_path%>
+</DIV>
+</DIV>
+<SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Directory-page_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

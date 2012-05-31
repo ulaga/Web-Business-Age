@@ -10,7 +10,7 @@ class SavedblogController < ApplicationController
 	def index
 		@b=Savedblog.find_all_by_user_id(current_user.id)
 		@b.each do |t|
-		@blog=Blog.find_all_by_id(t.blog_id)
+		@blog=Blog.find_all_by_id(t.blog_id)	
 		end
 	end
 		
