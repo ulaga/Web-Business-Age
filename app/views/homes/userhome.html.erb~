@@ -43,7 +43,7 @@ eval(s);
 
 
 </DIV>
-<DIV id=u28container style="position:absolute; left:920px; top:140px; width:251px; height:331px; border:2px solid #BDBDBD; background:#E6E6E6">
+<DIV id=u28container style="position:absolute; left:920px; top:140px; width:251px; height:331px;     background:D0E0FF">
 
 <DIV id=u29 style="position:absolute; left:2px; top:157px; width:246px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u29_rtf>&nbsp;</DIV></DIV>
@@ -60,12 +60,40 @@ src="After-login-page[My-WBA]_files/u31.png" border="0" alt=""></span>
 </span>
 <IMG id=u31 src="Resources/transparent.gif" style="position:absolute; left:737px; top:152px; width:30px; height:30px"   >
 
+<DIV id=u36 style="position:absolute; left:940px; top:160px; width:210px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u36_rtf><span style=" font-family:'Arial'; color:#000333; font-size:16px;"><b>Upgrade to Advertiser</b></span></DIV></DIV>
+<DIV id=u35 style="position:absolute; left:988px; top:270px; width:203px; height:45px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u35_rtf><span style=" font-family:'Arial'; color:#000000; font-size:12px;">Advertise to an elite audience of marketing professionals and business owners</span></DIV></DIV>
 
+<DIV id=u101 style="position:absolute; left:990px; top:323px; width:180px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u101_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Start today to get current attractive offers and rates</span></DIV></DIV>
+
+<DIV id=u38 style="position:absolute; left:990px; top:368px; width:180px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u38_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">DIY or get our editors to build your listings</span></DIV></DIV>
 
 <IMG id=u32 src="Resources/transparent.gif" style="position:absolute; left:920px; top:188.5px; width:247px; height:2px; background:#BDBDBD">
 
-<div  style="position:absolute; left:940px; top:425px; width:210px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= button_to "Become an Advertiser Member", :controller=>'registrations', :action => 'edit' %></div>
+<div  style="position:absolute; left:940px; top:425px; width:210px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= link_to "Become an Advertiser Member", "advertiser/#{current_user.id}" %></div>
 
+
+
+<DIV id=ou39 style="position:absolute; left:920px; top:489px; width:253px; height:251px;; overflow:visible">
+
+
+
+</DIV>
+<DIV id=u39container style="position:absolute; left:920px; top:489px; width:253px; height:251px;            ">
+
+<DIV id=u40 style="position:absolute; left:2px; top:117px; width:248px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u40_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u39 src="Resources/transparent.gif" style="position:absolute; left:920px; top:489px; width:252px; height:250px"  >
+<DIV id=u43 style="position:absolute; left:940px; top:503px; width:210px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u43_rtf><span style=" font-family:'Arial'; color:#000333; font-size:16px;"><b>Create Blogs</b></span></DIV></DIV>
+<DIV id=u43 style="position:absolute; left:980px; top:690px; width:130px; height:25px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<%= link_to 'Create Blog', new_blog_path %>
+</div>
+<IMG id=u42 src="Resources/transparent.gif" style="position:absolute; left:920px; top:531.5px; width:251px; height:2px; background:#BDBDBD">
 <span style="position:absolute; left:761px; top:280px; width:20px; height:20px">
 <span id=ou34 style="position:absolute;left:0px;top:0px;width:20px;height:20px;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='After-login-page[My-WBA]_files/u34.png',sizingMethod='scale');
@@ -74,10 +102,8 @@ src="After-login-page[My-WBA]_files/u34.png" border="0" alt=""></span>
 </span>
 <IMG id=u34 src="Resources/transparent.gif" style="position:absolute; left:761px; top:280px; width:20px; height:20px"   >
 
-<DIV id=u35 style="position:absolute; left:988px; top:270px; width:203px; height:45px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u35_rtf><span style=" font-family:'Arial'; color:#000000; font-size:12px;">Advertise to an elite audience of marketing professionals and business owners</span></DIV></DIV>
-<DIV id=u36 style="position:absolute; left:940px; top:160px; width:210px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u36_rtf><span style=" font-family:'Arial'; color:#000333; font-size:16px;"><b>Upgrade to Advertiser</b></span></DIV></DIV>
+
+
 <span style="position:absolute; left:765px; top:371px; width:20px; height:20px">
 <span id=ou37 style="position:absolute;left:0px;top:0px;width:20px;height:20px;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='After-login-page[My-WBA]_files/u37.png',sizingMethod='scale');
@@ -86,19 +112,8 @@ src="After-login-page[My-WBA]_files/u37.png" border="0" alt=""></span>
 </span>
 <IMG id=u37 src="Resources/transparent.gif" style="position:absolute; left:765px; top:371px; width:20px; height:20px"   >
 
-<DIV id=u38 style="position:absolute; left:990px; top:368px; width:180px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u38_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">DIY or get our editors to build your listings</span></DIV></DIV>
-<DIV id=ou39 style="position:absolute; left:920px; top:489px; width:253px; height:251px;; overflow:visible">
 
 
-
-</DIV>
-<DIV id=u39container style="position:absolute; left:920px; top:489px; width:253px; height:251px; border:2px solid #BDBDBD; background:#E6E6E6">
-
-<DIV id=u40 style="position:absolute; left:2px; top:117px; width:248px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u40_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u39 src="Resources/transparent.gif" style="position:absolute; left:920px; top:489px; width:252px; height:250px"  >
 
 <span style="position:absolute; left:741px; top:495px; width:30px; height:30px">
 <span id=ou41 style="position:absolute;left:0px;top:0px;width:30px;height:30px;
@@ -109,13 +124,9 @@ src="After-login-page[My-WBA]_files/u41.png" border="0" alt=""></span>
 <IMG id=u41 src="Resources/transparent.gif" style="position:absolute; left:741px; top:495px; width:30px; height:30px"   >
 
 
-<IMG id=u42 src="Resources/transparent.gif" style="position:absolute; left:920px; top:531.5px; width:251px; height:2px; background:#BDBDBD">
 
-<DIV id=u43 style="position:absolute; left:940px; top:503px; width:210px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u43_rtf><span style=" font-family:'Arial'; color:#000333; font-size:16px;"><b>Create Blogs</b></span></DIV></DIV>
-<DIV id=u43 style="position:absolute; left:980px; top:690px; width:130px; height:25px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<%= button_to 'Create new blog', listing_new_path %>
-</div>
+
+
 <DIV id=ou44 style="position:absolute; left:200px; top:140px; width:521px; height:251px;; overflow:visible">
 
 
@@ -125,7 +136,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='After-login-page[
 src="After-login-page[My-WBA]_files/u44.png" border="0" alt=""></span>
 
 </DIV>
-<DIV id=u44container style="position:absolute; left:200px; top:140px; width:700px; height:251px; border:2px solid #BDBDBD; background:#E6E6E6">
+<DIV id=u44container style="position:absolute; left:200px; top:140px; width:700px; height:251px;">
 
 <DIV id=u45 style="position:absolute; left:2px; top:117px; width:516px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u45_rtf>&nbsp;</DIV></DIV>
@@ -161,7 +172,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='After-login-page[
 src="After-login-page[My-WBA]_files/u50.png" border="0" alt=""></span>
 
 </DIV>
-<DIV id=u50container style="position:absolute; left:17px; top:140px; width:174px; height:191px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
+<DIV id=u50container style="position:absolute; left:17px; top:140px; width:174px; height:191px;     overflow:visible;        ">
 
 <DIV id=u51 style="position:absolute; left:2px; top:87px; width:169px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u51_rtf>&nbsp;</DIV></DIV>
@@ -257,12 +268,11 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='After-login-page[
 src="After-login-page[My-WBA]_files/u44.png" border="0" alt=""></span>
 
 </DIV>
-<DIV id=u66container style="position:absolute; left:200px; top:400px; width:700px; height:251px; border:2px solid #BDBDBD; background:#E6E6E6">
+<DIV id=u66container style="position:absolute; left:200px; top:400px; width:700px; height:251px;">
 
 <DIV id=u67 style="position:absolute; left:2px; top:117px; width:516px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u67_rtf>
 </DIV>
-
 </DIV>
 </DIV>
 
@@ -293,7 +303,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='After-login-page[
 src="After-login-page[My-WBA]_files/u44.png" border="0" alt=""></span>
 
 </DIV>
-<DIV id=u71container style="position:absolute; left:200px; top:660px; width:700px; height:251px; border:2px solid #BDBDBD; background:#E6E6E6">
+<DIV id=u71container style="position:absolute; left:200px; top:660px; width:700px; height:251px;            ">
 
 <DIV id=u72 style="position:absolute; left:2px; top:117px; width:516px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u72_rtf></div>
@@ -309,6 +319,7 @@ src="After-login-page[My-WBA]_files/u44.png" border="0" alt=""></span>
 
 
 <% end %>
+<%= will_paginate @list%>
 </table>
 </DIV> 
 </DIV>
@@ -339,7 +350,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='After-login-page[
 src="After-login-page[My-WBA]_files/u44.png" border="0" alt=""></span>
 
 </DIV>
-<DIV id=u76container style="position:absolute; left:200px; top:920px; width:700px; height:251px; border:2px solid #BDBDBD; background:#E6E6E6">
+<DIV id=u76container style="position:absolute; left:200px; top:920px; width:700px; height:251px;">
 
 <DIV id=u77 style="position:absolute; left:2px; top:117px; width:516px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u77_rtf></DIV>
@@ -352,6 +363,7 @@ src="After-login-page[My-WBA]_files/u44.png" border="0" alt=""></span>
 		</td>
 	</tr>
 <% end %>
+<%= will_paginate @blog%>
 </table>
 </DIV>
 </DIV>
@@ -386,8 +398,6 @@ src="After-login-page[My-WBA]_files/u80.png" border="0" alt=""></span>
 
 
 
-<DIV id=u101 style="position:absolute; left:990px; top:323px; width:180px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u101_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Start today to get current attractive offers and rates</span></DIV></DIV>
 
 
 

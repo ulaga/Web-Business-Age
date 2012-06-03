@@ -7,7 +7,7 @@ uses_tiny_mce :options => {
                           }
 def index
   @list = Advsponsoredlisting.all
-
+  @list = Advsponsoredlisting.paginate :page => params[:page], :per_page => 3
 end
 
 def new_listing
@@ -17,11 +17,9 @@ end
 
 def create_listing
   @list = Advsponsoredlisting.new(params[:advsponsoredlisting])
-   
- 	home_userhome_path if @list.save  
-
-
-  
+ 	 if @list.save  
+		redirect_to home_userhome_path
+	end  
 end
 def show_listing
    @list = Advsponsoredlisting.find(params[:id])

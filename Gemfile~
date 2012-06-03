@@ -11,6 +11,9 @@ gem 'galetahub-simple_captcha', :require => 'simple_captcha'
 gem 'tiny_mce'
 gem 'pg'
 gem 'heroku'
+gem 'activemerchant'
+gem 'will_paginate', '3.0.pre2'
+
 
 
 # Use unicorn as the web server

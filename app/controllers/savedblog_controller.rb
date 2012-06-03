@@ -8,10 +8,9 @@ class SavedblogController < ApplicationController
 		@s=Savedblog.find(params[:id])
 	end
 	def index
-		@b=Savedblog.find_all_by_user_id(current_user.id)
-		@b.each do |t|
-		@blog=Blog.find_all_by_id(t.blog_id)	
-		end
+		c=current_user.id
+		b_id= Savedblog.where("user_id = #{c}").map(&:blog_id)
+		@blog=Blog.find(b_id)
 	end
 		
 end

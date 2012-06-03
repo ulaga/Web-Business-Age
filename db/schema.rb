@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120528104757) do
+ActiveRecord::Schema.define(:version => 20120602105052) do
 
   create_table "advsponsoredlistings", :force => true do |t|
     t.string   "title"
@@ -41,6 +41,14 @@ ActiveRecord::Schema.define(:version => 20120528104757) do
     t.string   "category"
   end
 
+  create_table "editors", :force => true do |t|
+    t.string   "url"
+    t.string   "comments"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "savedblogs", :force => true do |t|
     t.integer  "user_id"
     t.integer  "blog_id"
@@ -63,6 +71,22 @@ ActiveRecord::Schema.define(:version => 20120528104757) do
   end
 
   add_index "simple_captcha_data", ["key"], :name => "idx_key"
+
+  create_table "transactions", :force => true do |t|
+    t.string   "card_type"
+    t.integer  "card_number"
+    t.date     "card_date"
+    t.string   "card_verification"
+    t.integer  "user_id"
+    t.integer  "monitorsignage_id"
+    t.integer  "amount"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.integer  "year"
+    t.integer  "order_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "",     :null => false

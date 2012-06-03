@@ -1,3 +1,11 @@
+<html>
+<head>
+<script src="/javascripts/livevalidation_standalone.js">
+</script>
+
+</head>
+</head>
+<body>
 <%= form_for(@blog) do |f| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
@@ -10,20 +18,66 @@
       </ul>
     </div>
   <% end %>
-<div><%= f.label :Title %>
-<%= f.text_field :title %></div><br>
-
-<div><%= f.label :Short_description %>
-<%= f.text_field :short_description %></div><br>
-<div><%= f.label :Description %>
-<%= f.text_area :description , :size => "30x5"%></div><br>
-<div><%= f.label :Author %>
-<%= f.text_field :author %></div><br>
-<div><%= f.label :Category %>
-<%= f.text_field :category %></div><br>
-
-
-  <div class="actions">
-    <%= f.submit %>
+<div id="u65" style="position:absolute; left:326px; top:280px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u65_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :title %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:376px; top:277px; width:323px; height:25px;"><%= f.text_field :title %></div>
+<div id="u69" style="position:absolute; left:251px; top:360px; width:136px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u69_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :short_description %>
+    </span>
+</div>
+</div>
+<div style="position:absolute; left:376px; top:328px; width:325px; height:90px;"><%= f.text_area :short_description, :size=>"43x5" %></div>
+<div id="u71" style="position:absolute; left:286px; top:550px; width:136px; height:16px;">
+<div id="u71_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Description %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:380px; top:470px; width:321px; height:90px;"><%= f.text_area :description, :size=>"43x5" %></div>
+<div id="u73" style="position:absolute; left:260px; top:620px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u73_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Author %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:377px; top:620px; width:113px; height:25px;"><%= f.text_field :author %></div>
+<div id="u74" style="position:absolute; left:260px; top:680px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;">
+<div id="u74_rtf">
+<span style=" font-family:'Arial'; color:#000000; font-size:13px;">
+<%= f.label :Category %>
+</span>
+</div>
+</div>
+<div style="position:absolute; left:377px; top:680px; width:113px; height:25px;"><%= f.text_field :category %></div>
+<div style="position:absolute; left:450px; top:760px; width:113px; height:25px;"><%= f.submit %></div>
+ <div class="actions">
+    
   </div>
+<script>
+var f1 = new LiveValidation('blog_title');
+f1.add( Validate.Presence ); </script>
+ <script>
+var f2 = new LiveValidation('blog_short_description');
+f2.add( Validate.Presence ); </script>
+ <script>
+var f3 = new LiveValidation('blog_description');
+f3.add( Validate.Presence ); </script>
+ <script>
+var f4 = new LiveValidation('blog_author');
+f4.add( Validate.Presence ); </script>
+ <script>
+var f5 = new LiveValidation('blog_category');
+f5.add( Validate.Presence );
+ </script>
 <% end %>
+</body>
+</html>

@@ -13,7 +13,6 @@ WBA::Application.routes.draw do
   match 'static/advertise' => 'static#advertise'
 #savedblogs
   match 'savedblog/new/:id' => 'savedblog#new',:as => :saved_blog
-
   match 'savedblog/index' => 'savedblog#index'
 #savedlistings
     match 'savedlisting/new/:id' => 'savedlisting#new',:as => :saved_listing
@@ -28,11 +27,19 @@ WBA::Application.routes.draw do
   match 'home/home' => 'homes#home'
   match 'home/userhome' => 'homes#userhome'
   match 'home/advertiserhome' => 'homes#advertiserhome'
+  match 'home/advertiser/:id' => 'homes#advertiser'
 #listing controller
   match 'listing/new' => 'listing#new_listing'
   match 'listing/create' => 'listing#create_listing'
   match 'listing/show_listing/:id' => 'listing#show_listing'
   match 'listing/index' => 'listing#index'
+#geteditor controller
+  match 'geteditor/new' => 'geteditor#new'
+  match 'geteditor/cont' => 'geteditor#cont'
+
+#transaction controller
+  #match'transaction/new' => 'transaction#new'
+resources :transaction
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

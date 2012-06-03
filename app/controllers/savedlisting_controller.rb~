@@ -9,11 +9,9 @@ class SavedlistingController < ApplicationController
 		@s=Savedlisting.find(params[:id])
 	end
 	def index
-		@sa=Savedlisting.find_all_by_user_id(current_user.id)
-		@sa.each do |t|
-		#@temp=Advsponsoredlisting.find_all_by_id(t.advsponsoredlistings_id)
-		@temp = Advsponsoredlisting.find_all_by_id(t.advsponsoredlistings_id)
-		end
+		c=current_user.id
+		l_id= Savedlisting.where("user_id = #{c}").map(&:advsponsoredlistings_id)
+		@list=Advsponsoredlisting.find(l_id)
 
 	end
 end

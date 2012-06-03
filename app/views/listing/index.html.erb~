@@ -77,7 +77,11 @@ src="Directory-page_files/u113.png" border="0" alt=""></span>
 	<td><%= l.created_at%></td>  
   </tr>
 <% end %>
+<tr>
+
+</tr>
 </table>
+<%= will_paginate @list%>
 </DIV>
 </DIV>
 <SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>

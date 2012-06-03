@@ -29,7 +29,7 @@ eval(s);
 <img border="0" alt="" src="Home_files/u0.png" style="width:559px; height:269px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);">
 </span>
 </div>
-<div id="u0container" style="position:absolute; left:225px; top:150px; width:760px; height:261px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
+<div id="u0container" style="position:absolute; left:225px; top:150px; width:760px; height:261px;   overflow:visible;    ">
 <div id="u1" style="position:absolute; left:2px; top:122px; width:546px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;">
 <div id="u1_rtf">&nbsp;</div>
 </div>
@@ -47,7 +47,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files
 src="images/Home_files/u3.png" border="0" alt=""></span>
 
 </DIV>
-<DIV id=u3container style="position:absolute; left:225px; top:420px; width:760px; height:291px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
+<DIV id=u3container style="position:absolute; left:225px; top:420px; width:760px; height:291px;    overflow:visible;    ">
 
 <DIV id=u4 style="position:absolute; left:2px; top:137px; width:546px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 
@@ -58,7 +58,7 @@ src="images/Home_files/u3.png" border="0" alt=""></span>
 <% @c.each do |t| %>
 	<tr>
 		<td>
-		<%= t.title %>
+		<%= link_to t.title, "/listing/show_listing/#{t.id}"%>
 		</td>
 	</tr>
 	<tr>
@@ -74,7 +74,7 @@ src="images/Home_files/u3.png" border="0" alt=""></span>
 </DIV>
 
 </DIV>
-<IMG id=u3 src="images/Resources/transparent.gif" style="position:absolute; left:225px; top:420px; width:759px; height:290px"  >
+
 
 <DIV id=u5 style="position:absolute; left:239px; top:433px; width:239px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u5_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;"><b>Featured Sponsored Listings</b></span></DIV></DIV>
@@ -86,7 +86,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files
 src="images/Home_files/u0.png" border="0" alt=""></span>
 
 </DIV>
-<DIV id=u6container style="position:absolute; left:225px; top:720px; width:760px; height:261px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
+<DIV id=u6container style="position:absolute; left:225px; top:720px; width:760px; height:261px;    overflow:visible;    ">
 
 <DIV id=u7 style="position:absolute; left:2px; top:122px; width:546px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <% @temp=Advsponsoredlisting.find_all_by_listingtypes("Normal") %>
@@ -96,7 +96,7 @@ src="images/Home_files/u0.png" border="0" alt=""></span>
 <% @c.each do |t| %>
 	<tr>
 		<td>
-		<%= t.title %>
+		<%= link_to t.title, "/listing/show_listing/#{t.id}"%>
 		</td>
 	</tr>
 	<tr>
@@ -124,7 +124,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files
 src="images/Home_files/u9.png" border="0" alt=""></span>
 
 </DIV>
-<DIV id=u9container style="position:absolute; left:224px; top:990px; width:760px; height:281px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
+<DIV id=u9container style="position:absolute; left:224px; top:990px; width:760px; height:281px;    overflow:visible;    ">
 
 <DIV id=u10 style="position:absolute; left:2px; top:132px; width:546px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u10_rtf>&nbsp;</DIV>
@@ -135,7 +135,7 @@ src="images/Home_files/u9.png" border="0" alt=""></span>
 <% @c.each do |t| %>
 	<tr>
 		<td>
-		<%= t.title %>
+		<%= link_to t.title, "/listing/show_listing/#{t.id}"%>
 		</td>
 	</tr>
 	<tr>
@@ -149,7 +149,7 @@ src="images/Home_files/u9.png" border="0" alt=""></span>
 
 </table></DIV>
 </DIV>
-<IMG id=u9 src="images/Resources/transparent.gif" style="position:absolute; left:224px; top:990px; width:759px; height:280px"  >
+
 
 <DIV id=u11 style="position:absolute; left:237px; top:1001px; width:199px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u11_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;"><b>More directory listings</b></span></DIV></DIV>
@@ -164,73 +164,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files
 
 
 
-<DIV id=ou28 style="position:absolute; left:17px; top:350px; width:199px; height:191px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:207px; height:199px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u28.png',sizingMethod='scale');
-"><img style="width:207px; height:199px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u28.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u28container style="position:absolute; left:17px; top:350px; width:199px; height:191px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
-
-<DIV id=u29 style="position:absolute; left:2px; top:87px; width:194px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u29_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u28 src="images/Resources/transparent.gif" style="position:absolute; left:17px; top:350px; width:198px; height:190px"  >
-
-<DIV id=ou30 style="position:absolute; left:16px; top:800px; width:201px; height:471px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:209px; height:479px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u30.png',sizingMethod='scale');
-"><img style="width:209px; height:479px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u30.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u30container style="position:absolute; left:16px; top:800px; width:201px; height:471px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
-
-<DIV id=u31 style="position:absolute; left:2px; top:227px; width:196px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u31_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u30 src="images/Resources/transparent.gif" style="position:absolute; left:16px; top:800px; width:200px; height:470px"  >
-
-<DIV id=u32 style="position:absolute; left:53px; top:432px; width:154px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u32_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:12px;"><u>Build Your Web Business</u></span></DIV></DIV>
-<DIV id=u33 style="position:absolute; left:52px; top:463px; width:175px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u33_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:12px;"><u>Market Your Web Business</u></span></DIV></DIV>
-<DIV id=u34 style="position:absolute; left:51px; top:498px; width:176px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u34_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:12px;"><u>Measure Your Web Business</u></span></DIV></DIV>
-<span style="position:absolute; left:26px; top:399px; width:20px; height:20px">
-<span id=ou35 style="position:absolute;left:0px;top:0px;width:20px;height:20px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u35.png',sizingMethod='scale');
-"><img style="width:20px; height:20px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u35.png" border="0" alt=""></span>
-</span>
-<IMG id=u35 src="images/Resources/transparent.gif" style="position:absolute; left:26px; top:399px; width:20px; height:20px"   >
-
-<span style="position:absolute; left:26px; top:429px; width:20px; height:20px">
-<span id=ou36 style="position:absolute;left:0px;top:0px;width:20px;height:20px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u36.png',sizingMethod='scale');
-"><img style="width:20px; height:20px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u36.png" border="0" alt=""></span>
-</span>
-<IMG id=u36 src="images/Resources/transparent.gif" style="position:absolute; left:26px; top:429px; width:20px; height:20px"   >
-
-<span style="position:absolute; left:26px; top:460px; width:20px; height:20px">
-<span id=ou37 style="position:absolute;left:0px;top:0px;width:20px;height:20px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u37.png',sizingMethod='scale');
-"><img style="width:20px; height:20px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u37.png" border="0" alt=""></span>
-</span>
-<IMG id=u37 src="images/Resources/transparent.gif" style="position:absolute; left:26px; top:460px; width:20px; height:20px"   >
-
-<span style="position:absolute; left:26px; top:495px; width:20px; height:20px">
-<span id=ou38 style="position:absolute;left:0px;top:0px;width:20px;height:20px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u38.png',sizingMethod='scale');
-"><img style="width:20px; height:20px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u38.png" border="0" alt=""></span>
-</span>
-<IMG id=u38 src="images/Resources/transparent.gif" style="position:absolute; left:26px; top:495px; width:20px; height:20px"   >
 
 <DIV id=ou39 style="position:absolute; left:15px; top:150px; width:201px; height:191px;; overflow:visible">
 
@@ -240,7 +174,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files
 src="images/Home_files/u39.png" border="0" alt=""></span>
 
 </DIV>
-<DIV id=u39container style="position:absolute; left:15px; top:150px; width:201px; height:191px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
+<DIV id=u39container style="position:absolute; left:15px; top:150px; width:201px; height:191px;    overflow:visible;    ">
 
 <DIV id=u40 style="position:absolute; left:2px; top:87px; width:196px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u40_rtf>&nbsp;</DIV></DIV>
@@ -310,14 +244,7 @@ src="images/Home_files/u51.png" border="0" alt=""></span>
 </span>
 <IMG id=u51 src="images/Resources/transparent.gif" style="position:absolute; left:22px; top:155px; width:30px; height:30px"   >
 
-<DIV id=u52 style="position:absolute; left:63px; top:359px; width:137px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u52_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;"><b>Blog Categories</b></span></DIV></DIV>
-<span style="position:absolute; left:19px; top:384px; width:189px; height:6px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u53.png',sizingMethod='scale');
-"><img style="width:189px; height:6px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u53.png" border="0" alt=""></span>
 
-<IMG id=u53 src="images/Resources/transparent.gif" style="position:absolute; left:19px; top:384px; width:186px; height:3px">
 
 <span style="position:absolute; left:26px; top:354px; width:30px; height:30px">
 <span id=ou54 style="position:absolute;left:0px;top:0px;width:30px;height:30px;
@@ -327,73 +254,7 @@ src="images/Home_files/u54.png" border="0" alt=""></span>
 </span>
 <IMG id=u54 src="images/Resources/transparent.gif" style="position:absolute; left:26px; top:354px; width:30px; height:30px"   >
 
-<DIV id=u55 style="position:absolute; left:67px; top:810px; width:118px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u55_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;"><b>Recent posts</b></span></DIV></DIV>
-<span style="position:absolute; left:24px; top:834px; width:189px; height:6px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u56.png',sizingMethod='scale');
-"><img style="width:189px; height:6px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u56.png" border="0" alt=""></span>
 
-<IMG id=u56 src="images/Resources/transparent.gif" style="position:absolute; left:24px; top:834px; width:186px; height:3px">
-
-<span style="position:absolute; left:31px; top:804px; width:30px; height:30px">
-<span id=ou57 style="position:absolute;left:0px;top:0px;width:30px;height:30px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u57.png',sizingMethod='scale');
-"><img style="width:30px; height:30px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u57.png" border="0" alt=""></span>
-</span>
-<IMG id=u57 src="images/Resources/transparent.gif" style="position:absolute; left:31px; top:804px; width:30px; height:30px"   >
-
-<span style="position:absolute; left:24px; top:915px; width:174px; height:5px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u58.png',sizingMethod='scale');
-"><img style="width:174px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u58.png" border="0" alt=""></span>
-
-<IMG id=u58 src="images/Resources/transparent.gif" style="position:absolute; left:24px; top:914.5px; width:171px; height:2px">
-
-<DIV id=u59 style="position:absolute; left:25px; top:874px; width:190px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u59_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Lorem ipsum dolor sit amet Lorem ipsum dolor </span></DIV></DIV>
-<DIV id=u60 style="position:absolute; left:139px; top:888px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u60_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>more ...</u></span></DIV></DIV>
-<DIV id=u61 style="position:absolute; left:26px; top:929px; width:170px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u61_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Lorem ipsum dolor sit amet, </u></span></DIV></DIV>
-<span style="position:absolute; left:25px; top:994px; width:174px; height:5px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u62.png',sizingMethod='scale');
-"><img style="width:174px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u62.png" border="0" alt=""></span>
-
-<IMG id=u62 src="images/Resources/transparent.gif" style="position:absolute; left:25px; top:993.5px; width:171px; height:2px">
-
-<DIV id=u63 style="position:absolute; left:26px; top:953px; width:190px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u63_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Lorem ipsum dolor sit amet Lorem ipsum dolor </span></DIV></DIV>
-<DIV id=u64 style="position:absolute; left:140px; top:967px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u64_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>more ...</u></span></DIV></DIV>
-<DIV id=u65 style="position:absolute; left:25px; top:1004px; width:170px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u65_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Lorem ipsum dolor sit amet, </u></span></DIV></DIV>
-<span style="position:absolute; left:24px; top:1069px; width:174px; height:5px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u66.png',sizingMethod='scale');
-"><img style="width:174px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u66.png" border="0" alt=""></span>
-
-<IMG id=u66 src="images/Resources/transparent.gif" style="position:absolute; left:24px; top:1068.5px; width:171px; height:2px">
-
-<DIV id=u67 style="position:absolute; left:25px; top:1028px; width:190px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u67_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Lorem ipsum dolor sit amet Lorem ipsum dolor </span></DIV></DIV>
-<DIV id=u68 style="position:absolute; left:139px; top:1042px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u68_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>more ...</u></span></DIV></DIV>
-<DIV id=u69 style="position:absolute; left:23px; top:1080px; width:170px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u69_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Lorem ipsum dolor sit amet, </u></span></DIV></DIV>
-<span style="position:absolute; left:22px; top:1145px; width:174px; height:5px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u70.png',sizingMethod='scale');
-"><img style="width:174px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u70.png" border="0" alt=""></span>
-
-<IMG id=u70 src="images/Resources/transparent.gif" style="position:absolute; left:22px; top:1144.5px; width:171px; height:2px">
-
-<DIV id=u71 style="position:absolute; left:23px; top:1104px; width:190px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u71_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Lorem ipsum dolor sit amet Lorem ipsum dolor </span></DIV></DIV>
-<DIV id=u72 style="position:absolute; left:135px; top:1118px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u72_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>more ...</u></span></DIV></DIV>
 <span style="position:absolute; left:235px; top:459px; width:513px; height:5px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u73.png',sizingMethod='scale');
 "><img style="width:513px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
@@ -415,54 +276,6 @@ src="images/Home_files/u75.png" border="0" alt=""></span>
 
 <IMG id=u75 src="images/Resources/transparent.gif" style="position:absolute; left:236px; top:1024.5px; width:510px; height:2px">
 
-<DIV id=ou76 style="position:absolute; left:17px; top:550px; width:199px; height:241px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:207px; height:249px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u76.png',sizingMethod='scale');
-"><img style="width:207px; height:249px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u76.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u76container style="position:absolute; left:17px; top:550px; width:199px; height:241px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
-
-<DIV id=u77 style="position:absolute; left:2px; top:112px; width:194px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u77_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u76 src="images/Resources/transparent.gif" style="position:absolute; left:17px; top:550px; width:198px; height:240px"  >
-
-<DIV id=u78 style="position:absolute; left:63px; top:559px; width:90px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u78_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;"><b>Tags</b></span></DIV></DIV>
-<span style="position:absolute; left:19px; top:589px; width:189px; height:6px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u79.png',sizingMethod='scale');
-"><img style="width:189px; height:6px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u79.png" border="0" alt=""></span>
-
-<IMG id=u79 src="images/Resources/transparent.gif" style="position:absolute; left:19px; top:589px; width:186px; height:3px">
-
-<span style="position:absolute; left:26px; top:554px; width:30px; height:30px">
-<span id=ou80 style="position:absolute;left:0px;top:0px;width:30px;height:30px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u80.png',sizingMethod='scale');
-"><img style="width:30px; height:30px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u80.png" border="0" alt=""></span>
-</span>
-<IMG id=u80 src="images/Resources/transparent.gif" style="position:absolute; left:26px; top:554px; width:30px; height:30px"   >
-
-<DIV id=u81 style="position:absolute; left:53px; top:621px; width:110px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u81_rtf><span style=" font-family:'Arial'; color:#808080; font-size:15px;">Viral marketing</span></DIV></DIV>
-<DIV id=u82 style="position:absolute; left:30px; top:600px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u82_rtf><span style=" font-family:'Arial'; color:#808080; font-size:13px;">Online</span></DIV></DIV>
-<DIV id=u83 style="position:absolute; left:26px; top:711px; width:200px; height:27px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u83_rtf><span style=" font-family:'Arial'; color:#808080; font-size:24px;">Sales Promotion</span></DIV></DIV>
-<DIV id=u84 style="position:absolute; left:146px; top:600px; width:70px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u84_rtf><span style=" font-family:'Arial'; color:#808080; font-size:15px;">Business</span></DIV></DIV>
-<DIV id=u85 style="position:absolute; left:40px; top:673px; width:60px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u85_rtf><span style=" font-family:'Arial'; color:#808080; font-size:15px;">Internet</span></DIV></DIV>
-<DIV id=u86 style="position:absolute; left:110px; top:683px; width:70px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u86_rtf><span style=" font-family:'Arial'; color:#808080; font-size:15px;">Business</span></DIV></DIV>
-<DIV id=u87 style="position:absolute; left:36px; top:746px; width:125px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u87_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;">Online Marketing</span></DIV></DIV>
-<DIV id=u88 style="position:absolute; left:150px; top:764px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u88_rtf><span style=" font-family:'Arial'; color:#808080; font-size:13px;">Online</span></DIV></DIV>
 
 
 
@@ -474,7 +287,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files
 src="images/Home_files/u102.png" border="0" alt=""></span>
 
 </DIV>
-<DIV id=u102container style="position:absolute; left:1000px; top:150px; width:211px; height:291px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
+<DIV id=u102container style="position:absolute; left:1000px; top:150px; width:211px; height:291px;    overflow:visible;    ">
 
 <DIV id=u103 style="position:absolute; left:2px; top:137px; width:206px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u103_rtf>&nbsp;</DIV></DIV>
@@ -573,218 +386,7 @@ src="images/Home_files/u122.png" border="0" alt=""></span>
 </span>
 <IMG id=u122 src="images/Resources/transparent.gif" style="position:absolute; left:809px; top:389px; width:20px; height:20px"   >
 
-<DIV id=ou123 style="position:absolute; left:1000px; top:450px; width:211px; height:361px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:219px; height:369px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u123.png',sizingMethod='scale');
-"><img style="width:219px; height:369px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u123.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u123container style="position:absolute; left:1000px; top:450px; width:211px; height:361px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
-
-<DIV id=u124 style="position:absolute; left:2px; top:172px; width:206px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u124_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u123 src="images/Resources/transparent.gif" style="position:absolute; left:1000px; top:450px; width:210px; height:360px"  >
-
-<DIV id=u125 style="position:absolute; left:1047px; top:461px; width:142px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u125_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;"><b>Connect</b></span></DIV></DIV>
-<span style="position:absolute; left:796px; top:490px; width:189px; height:6px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u126.png',sizingMethod='scale');
-"><img style="width:189px; height:6px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u126.png" border="0" alt=""></span>
-
-<IMG id=u126 src="images/Resources/transparent.gif" style="position:absolute; left:796px; top:490px; width:186px; height:3px">
-
-<span style="position:absolute; left:795px; top:454px; width:30px; height:30px">
-<span id=ou127 style="position:absolute;left:0px;top:0px;width:30px;height:30px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u127.png',sizingMethod='scale');
-"><img style="width:30px; height:30px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u127.png" border="0" alt=""></span>
-</span>
-<IMG id=u127 src="images/Resources/transparent.gif" style="position:absolute; left:795px; top:454px; width:30px; height:30px"   >
-
-<DIV id=ou128 style="position:absolute; left:1016px; top:500px; width:181px; height:41px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:189px; height:49px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u128.png',sizingMethod='scale');
-"><img style="width:189px; height:49px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u128.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u128container style="position:absolute; left:1016px; top:500px; width:181px; height:41px; border:2px solid #BDBDBD; overflow:visible;">
-
-<DIV id=u129 style="position:absolute; left:2px; top:12px; width:176px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u129_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u128 src="images/Resources/transparent.gif" style="position:absolute; left:1016px; top:500px; width:180px; height:40px"  >
-
-<span style="position:absolute; left:814px; top:508px; width:28px; height:28px">
-<IMG id=ou130 src="images/Home_files/u130.jpg" style="position:absolute;left:0px;top:0px;width:28px;height:28px">
-</span>
-<IMG id=u130 src="images/Resources/transparent.gif" style="position:absolute; left:814px; top:508px; width:28px; height:28px"   >
-
-<DIV id=u131 style="position:absolute; left:1063px; top:513px; width:114px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u131_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>Subscribe</b></span></DIV></DIV>
-<DIV id=ou132 style="position:absolute; left:1016px; top:549px; width:181px; height:82px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:189px; height:90px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u132.png',sizingMethod='scale');
-"><img style="width:189px; height:90px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u132.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u132container style="position:absolute; left:1016px; top:549px; width:181px; height:82px; border:2px solid #BDBDBD; overflow:visible;">
-
-<DIV id=u133 style="position:absolute; left:2px; top:32.5px; width:176px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u133_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u132 src="images/Resources/transparent.gif" style="position:absolute; left:1016px; top:549px; width:180px; height:81px"  >
-
-<DIV id=u134 style="position:absolute; left:1023px; top:558px; width:180px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u134_rtf><span style=" font-family:'Arial'; color:#000000; font-size:15px;"><b>Get E-mail newsletter</b></span></DIV></DIV>
-<INPUT id=u135  type=submit value="Signup" style="position:absolute; left:1128px; top:588px; width:60px; height:22px; ; ; text-align: center ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
-
-<DIV id=ou136 style="position:absolute; left:1016px; top:639px; width:181px; height:82px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:189px; height:90px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u132.png',sizingMethod='scale');
-"><img style="width:189px; height:90px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u132.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u136container style="position:absolute; left:1016px; top:639px; width:181px; height:82px; border:2px solid #BDBDBD; overflow:visible;">
-
-<DIV id=u137 style="position:absolute; left:2px; top:32.5px; width:176px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u137_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u136 src="images/Resources/transparent.gif" style="position:absolute; left:1016px; top:639px; width:180px; height:81px"  >
-
-<span style="position:absolute; left:825px; top:642px; width:58px; height:58px">
-<IMG id=ou138 src="images/Home_files/u138.jpg" style="position:absolute;left:0px;top:0px;width:58px;height:58px">
-</span>
-<IMG id=u138 src="images/Resources/transparent.gif" style="position:absolute; left:1040px; top:642px; width:58px; height:58px; border:2px solid #BDBDBD"   >
-
-<DIV id=u138ann style="font-size:1px; position:absolute; left:874px; top:638px; width:1px; height:1px; overflow:visible"></DIV>
-
-<span style="position:absolute; left:904px; top:647px; width:48px; height:48px">
-<IMG id=ou139 src="images/Home_files/u139.jpg" style="position:absolute;left:0px;top:0px;width:48px;height:48px">
-</span>
-<IMG id=u139 src="images/Resources/transparent.gif" style="position:absolute; left:1119px; top:647px; width:48px; height:48px; border:2px solid #BDBDBD"   >
-
-<DIV id=u139ann style="font-size:1px; position:absolute; left:943px; top:643px; width:1px; height:1px; overflow:visible"></DIV>
-
-<DIV id=u140 style="position:absolute; left:1046px; top:697px; width:60px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u140_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:11px;"><u>Linked in</u></span></DIV></DIV>
-<DIV id=u141 style="position:absolute; left:1136px; top:696px; width:60px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u141_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:12px;"><u>Twitter</u></span></DIV></DIV>
-<DIV id=ou142 style="position:absolute; left:1008px; top:727px; width:195px; height:71px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:203px; height:79px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u142.png',sizingMethod='scale');
-"><img style="width:203px; height:79px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u142.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u142container style="position:absolute; left:1008px; top:727px; width:195px; height:71px; border:2px solid #BDBDBD; overflow:visible;">
-
-<DIV id=u143 style="position:absolute; left:2px; top:27px; width:190px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u143_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u142 src="images/Resources/transparent.gif" style="position:absolute; left:1008px; top:727px; width:194px; height:70px"  >
-
-<DIV id=u144 style="position:absolute; left:1053px; top:738px; width:130px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u144_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Be our guest author</u></span></DIV></DIV>
-<span style="position:absolute; left:804px; top:734px; width:25px; height:25px">
-<span id=ou145 style="position:absolute;left:0px;top:0px;width:25px;height:25px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u145.png',sizingMethod='scale');
-"><img style="width:25px; height:25px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u145.png" border="0" alt=""></span>
-</span>
-<IMG id=u145 src="images/Resources/transparent.gif" style="position:absolute; left:804px; top:734px; width:25px; height:25px"   >
-
-<DIV id=u146 style="position:absolute; left:1050px; top:770px; width:196px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u146_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Suggest news or content to us</u></span></DIV></DIV>
-<span style="position:absolute; left:804px; top:766px; width:25px; height:25px">
-<span id=ou147 style="position:absolute;left:0px;top:0px;width:25px;height:25px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u147.png',sizingMethod='scale');
-"><img style="width:25px; height:25px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u147.png" border="0" alt=""></span>
-</span>
-<IMG id=u147 src="images/Resources/transparent.gif" style="position:absolute; left:804px; top:766px; width:25px; height:25px"   >
-
-<DIV id=ou148 style="position:absolute; left:1000px; top:820px; width:211px; height:141px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:219px; height:149px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u148.png',sizingMethod='scale');
-"><img style="width:219px; height:149px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u148.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u148container style="position:absolute; left:1000px; top:820px; width:211px; height:141px; border:2px solid #BDBDBD; overflow:visible; background:#E6E6E6">
-
-<DIV id=u149 style="position:absolute; left:2px; top:62px; width:206px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u149_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u148 src="images/Resources/transparent.gif" style="position:absolute; left:1000px; top:820px; width:210px; height:140px"  >
-
-<DIV id=ou150 style="position:absolute; left:1020px; top:872px; width:181px; height:32px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:189px; height:40px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u119.png',sizingMethod='scale');
-"><img style="width:189px; height:40px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u119.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u150container style="position:absolute; left:1020px; top:872px; width:181px; height:32px; border:2px solid #BDBDBD; overflow:visible;">
-
-<DIV id=u151 style="position:absolute; left:2px; top:7.5px; width:176px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u151_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u150 src="images/Resources/transparent.gif" style="position:absolute; left:1020px; top:872px; width:180px; height:31px"  >
-
-<span style="position:absolute; left:815px; top:876px; width:25px; height:25px">
-<IMG id=ou152 src="images/Home_files/u152.jpg" style="position:absolute;left:0px;top:0px;width:25px;height:25px">
-</span>
-<IMG id=u152 src="images/Resources/transparent.gif" style="position:absolute; left:815px; top:876px; width:25px; height:25px"   >
-
-<DIV id=u153 style="position:absolute; left:1061px; top:879px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u153_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Tweet this</u></span></DIV></DIV>
-<DIV id=ou154 style="position:absolute; left:1020px; top:909px; width:181px; height:32px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:189px; height:40px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u119.png',sizingMethod='scale');
-"><img style="width:189px; height:40px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u119.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u154container style="position:absolute; left:1020px; top:909px; width:181px; height:32px; border:2px solid #BDBDBD; overflow:visible;">
-
-<DIV id=u155 style="position:absolute; left:2px; top:7.5px; width:176px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u155_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u154 src="images/Resources/transparent.gif" style="position:absolute; left:1020px; top:909px; width:180px; height:31px"  >
-
-<DIV id=u156 style="position:absolute; left:1063px; top:915px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u156_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Share this</u></span></DIV></DIV>
-<span style="position:absolute; left:815px; top:913px; width:25px; height:25px">
-<span id=ou157 style="position:absolute;left:0px;top:0px;width:25px;height:25px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u157.png',sizingMethod='scale');
-"><img style="width:25px; height:25px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u157.png" border="0" alt=""></span>
-</span>
-<IMG id=u157 src="images/Resources/transparent.gif" style="position:absolute; left:815px; top:913px; width:25px; height:25px"   >
-
-<DIV id=u158 style="position:absolute; left:1043px; top:833px; width:171px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u158_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;"><b>Tell others about us</b></span></DIV></DIV>
-<span style="position:absolute; left:795px; top:861px; width:193px; height:6px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u159.png',sizingMethod='scale');
-"><img style="width:193px; height:6px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/Home_files/u159.png" border="0" alt=""></span>
-
-<IMG id=u159 src="images/Resources/transparent.gif" style="position:absolute; left:795px; top:861px; width:190px; height:3px">
-
+ 
 <span style="position:absolute; left:791px; top:827px; width:30px; height:30px">
 <span id=ou160 style="position:absolute;left:0px;top:0px;width:30px;height:30px;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Home_files/u160.png',sizingMethod='scale');
@@ -826,39 +428,26 @@ src="images/Home_files/u160.png" border="0" alt=""></span>
 <DIV id=u198 style="position:absolute; left:332px; top:194px; width:240px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u198_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">for your digital strategy and marketing. </span></DIV></DIV>
 <DIV id=u199 style="position:absolute; left:270px; top:194px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u199_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>resources</u></span></DIV></DIV>
+<DIV id=u199_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u><%=link_to 'resources',   listing_index_path%></u></span></DIV></DIV>
 <DIV id=u199ann style="font-size:1px; position:absolute; left:331px; top:190px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u200 style="position:absolute; left:559px; top:194px; width:40px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u200_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Plus</span></DIV></DIV>
 <DIV id=u201 style="position:absolute; left:590px; top:193px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u201_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>tips, guides and analysis</u></span></DIV></DIV>
+<DIV id=u201_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u><%=link_to 'tips, guides and analysis', blogs_path%></u></span></DIV></DIV>
 <DIV id=u201ann style="font-size:1px; position:absolute; left:741px; top:189px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u202 style="position:absolute; left:240px; top:215px; width:270px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u202_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">from our expert staff and contributors. </span></DIV></DIV>
 <DIV id=u203 style="position:absolute; left:462px; top:214px; width:118px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u203_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Become a Member</u></span></DIV></DIV>
+<DIV id=u203_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u><%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  <%= link_to "Become a member", new_registration_path(resource_name) %><br />
+<% end -%></u></span></DIV></DIV>
 <DIV id=u203ann style="font-size:1px; position:absolute; left:571px; top:210px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u204 style="position:absolute; left:586px; top:215px; width:510px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u204_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">to get personalized content, </span></DIV></DIV>
-<DIV id=u205 style="position:absolute; left:50px; top:402px; width:185px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u205_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:12px;"><u>Think About Your Web business</u></span></DIV></DIV>
-<DIV id=u205ann style="font-size:1px; position:absolute; left:226px; top:398px; width:1px; height:1px; overflow:visible"></DIV>
 
-<DIV id=u206 style="position:absolute; left:85px; top:647px; width:125px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u206_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;">Online Marketing</span></DIV></DIV>
-<DIV id=u206ann style="font-size:1px; position:absolute; left:201px; top:643px; width:1px; height:1px; overflow:visible"></DIV>
-
-
-
-
-
-
-<DIV id=u230 style="position:absolute; left:26px; top:854px; width:170px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<DIV id=u230_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Lorem ipsum dolor sit amet, </u></span></DIV></DIV>
-<DIV id=u230ann style="font-size:1px; position:absolute; left:187px; top:850px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u231 style="position:absolute; left:240px; top:234px; width:510px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <DIV id=u231_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">services and a useful newsletter.</span></DIV></DIV>

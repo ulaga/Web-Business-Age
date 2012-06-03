@@ -1,5 +1,7 @@
 <html>
-
+<head>
+<script src="/javascripts/livevalidation_standalone.js">
+</script>
 
 </head>
 <body>
@@ -396,6 +398,27 @@
 </div>
 </div>
 <% end %>
+<script>
+var f1 = new LiveValidation('advsponsoredlisting_title');
+f1.add( Validate.Presence ); </script>
+ <script>
+var f2 = new LiveValidation('advsponsoredlisting_shortdescription');
+f2.add( Validate.Presence ); </script>
+ <script>
+var f3 = new LiveValidation('advsponsoredlisting_description');
+f3.add( Validate.Presence ); </script>
+ <script>
+var f4 = new LiveValidation('advsponsoredlisting_author');
+f4.add( Validate.Presence ); </script>
+ <script>
+var f5 = new LiveValidation('advsponsoredlisting_category');
+f5.add( Validate.Presence );
+ </script>
+<script>
+var f6 = new LiveValidation('advsponsoredlisting_listingtypes');
+f6.add( Validate.Presence );
+ </script>
 </body>
 </html>
+
 
