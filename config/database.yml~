@@ -32,7 +32,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: w_b_a_production
+  database: w_b_a_production1
   pool: 5
   username: root
   password: root
