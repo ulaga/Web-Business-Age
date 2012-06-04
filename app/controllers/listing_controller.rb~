@@ -18,7 +18,7 @@ end
 def create_listing
   @list = Advsponsoredlisting.new(params[:advsponsoredlisting])
  	 if @list.save  
-		redirect_to home_userhome_path
+		redirect_to home_advertiserhome_path
 	end  
 end
 def show_listing
