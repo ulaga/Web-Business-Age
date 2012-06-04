@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120602105052) do
+ActiveRecord::Schema.define(:version => 20120604055434) do
 
   create_table "advsponsoredlistings", :force => true do |t|
     t.string   "title"
@@ -74,7 +74,7 @@ ActiveRecord::Schema.define(:version => 20120602105052) do
 
   create_table "transactions", :force => true do |t|
     t.string   "card_type"
-    t.integer  "card_number"
+    t.string   "card_number"
     t.date     "card_date"
     t.string   "card_verification"
     t.integer  "user_id"

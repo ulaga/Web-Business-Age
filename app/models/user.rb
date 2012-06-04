@@ -15,6 +15,8 @@ class User < ActiveRecord::Base
 #relatioship with mysavedlisting
 	has_many :advsponsoredlistings, :through => :savedlistings
 	has_many :savedlistings
+# relationship with transaction
+	has_many :transactions
 
 apply_simple_captcha
 

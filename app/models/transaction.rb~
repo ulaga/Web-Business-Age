@@ -1,8 +1,3 @@
 class Transaction < ActiveRecord::Base
-#relationship with
-TYPE ={
-    :visa=>"VISA",
-    :mastercard=>"MASTER CARD",
-    :americanexpress=>"AMERICAN EXPRESS"
-    }
+	belongs_to :user
 end
